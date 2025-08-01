@@ -1,0 +1,52 @@
+.notification-list__panel {
+  width: 340px;
+  max-height: 420px;
+  overflow-y: auto;
+  background: #fff;
+  box-shadow: 0 6px 24px #0002;
+  border-radius: 12px;
+  position: absolute;
+  top: 48px;
+  right: 0;
+  z-index: 200;
+  padding: 0.5em 0;
+  margin-top: 4px;
+  animation: fadein 0.2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(-10px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+.notification-list__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  padding: 12px 18px 4px 18px;
+  font-size: 1.08rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+.notification-list__header button {
+  background: #e0e7ef;
+  color: #1976d2;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+.notification-list__header button:hover { background: #d4e2f5; }
+.notification-list__date {
+  font-size: 0.92rem;
+  color: #8a8fa2;
+  font-weight: 600;
+  margin: 9px 0 3px 18px;
+}
+.notification-list__empty {
+  text-align: center;
+  color: #aaa;
+  padding: 28px 0 10px 0;
+}

@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body, html, .app-root {
+  font-family: 'Roboto', sans-serif;
+  background: #f6f8fa;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.app-root { display: flex; justify-content: center; align-items: center; height: 100vh; }
